@@ -33,9 +33,9 @@ const Footer = () => {
 
         <div className="footer-socials">
           <a href="https://www.linkedin.com/in/itspraveenk/" target="_blank" aria-label="LinkedIn"><FaLinkedin /></a>
-          {/* <a href="#" aria-label="YouTube"><FaYoutube /></a>
-          <a href="#" aria-label="Instagram"><FaInstagram /></a> */}
-          <a href="#" target="_blank" aria-label="Twitter"><FaTwitter /></a>
+          {/* <a href="#" aria-label="YouTube"><FaYoutube /></a>*/}
+          <a href="#" aria-label="Instagram"><FaInstagram /></a> 
+          {/* <a href="#" target="_blank" aria-label="Twitter"><FaTwitter /></a> */}
         </div>
 
         <p className="footer-credit">

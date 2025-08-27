@@ -13,7 +13,10 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-import profile from "../pages/profile/praveen.png";
+import profile from "../pages/profile/praveen.jpg";
+
+
+
 
 const titles = [
   "Machine Learning Engineer",
@@ -170,7 +173,7 @@ const Hero = () => {
             <Button
               variant="contained"
               endIcon={<DescriptionIcon />}
-              href="/Resume.pdf"
+              href="/my-portfolio/Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               sx={{
