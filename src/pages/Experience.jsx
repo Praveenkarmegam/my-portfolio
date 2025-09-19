@@ -11,24 +11,17 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    title: "Intern - ZIDIO DEVELOPMENT",
-    period: "June 2025 – July 2025",
-    location: "Remote",
+    title: "Full Stack Web Developer",
+    company: "STUDIX SOLUTIONS",
+    period: "Jun 2025 – Present",
+    location: "On-site / Remote",
     description: [
-      "Built responsive web applications with modern frontend/backend tech.",
-      "Collaborated with UI/UX designers to enhance usability and aesthetics.",
-      "Integrated third-party APIs and scalable backend services.",
-      "Participated in agile practices like code reviews and documentation.",
-    ],
-  },
-  {
-    title: "Freelancer - Full Stack Developer",
-    period: "Ongoing",
-    location: "Remote",
-    description: [
-      "Developed full-stack web solutions for client requirements.",
-      "Built custom admin panels, e-commerce components, and dashboards.",
-      "Used React, Node.js, Express, MongoDB, and custom CSS.",
+      "Designed and developed the official company website, ensuring responsive design and smooth user experience.",
+      "Currently enhancing the website using the MERN stack for improved scalability and performance.",
+      "Leading the development of a video meeting platform and an event management system with real-time features.",
+      "Contributed to content creation and digital strategy, supporting the company’s branding efforts.",
+      "Used Hostinger for overall website hosting, management, and SEO optimization.",
+      "Assisted in team coordination and task management, helping streamline workflows in a startup environment.",
     ],
   },
 ];
@@ -112,8 +105,10 @@ const Experience = () => {
                       fontWeight="bold"
                       sx={{ color: "#E0E0FF" }}
                     >
-                      {exp.title}
+                      {exp.title} - {exp.company}
                     </Typography>
+
+
                     <Typography
                       variant="subtitle2"
                       sx={{ color: "rgba(255,255,255,0.7)" }}

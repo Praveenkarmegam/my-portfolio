@@ -13,14 +13,10 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-import profile from "../pages/profile/praveen.jpg";
-
-
 
 
 const titles = [
-  "Machine Learning Engineer",
-  "Full Stack Developer",
+  "Full Stack Web Developer",
   "AI & Data Science Enthusiast",
 ];
 
@@ -173,7 +169,7 @@ const Hero = () => {
             <Button
               variant="contained"
               endIcon={<DescriptionIcon />}
-              href="/my-portfolio/Resume.pdf"
+              href="/Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               sx={{
@@ -205,8 +201,7 @@ const Hero = () => {
           >
             <IconButton
               component="a"
-              href="https://github.com/praveen-fsd"
-              target="_blank"
+              href="https://github.com/Praveenkarmegam"
               rel="noopener noreferrer"
               sx={{ color: "#ffffff" }}
             >
@@ -215,7 +210,6 @@ const Hero = () => {
             <IconButton
               component="a"
               href="https://www.linkedin.com/in/itspraveenk/"
-              target="_blank"
               rel="noopener noreferrer"
               sx={{ color: "#ffffff" }}
             >
@@ -239,7 +233,7 @@ const Hero = () => {
       >
         <Avatar
           alt="Image"
-          src={profile}
+          src="/profile/praveen.jpg"
           sx={{
             width: { xs: 240, md: 360 },
             height: { xs: 240, md: 360 },

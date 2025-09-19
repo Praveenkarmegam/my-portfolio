@@ -52,15 +52,11 @@ const techIcons = {
   AWS: <FaAws size={16} />,
 };
 
-import chatbotImage from "../pages/project-image/chatbot.jpeg";
-import foodImage from "../pages/project-image/food.jpeg";
-import gmailImage from "../pages/project-image/gmail.jpeg";
-import supplyChainImage from "../pages/project-image/supplychain.jpeg";
 
 const projects = [
   {
     title: "Online Food Delivery",
-    image: foodImage,
+    image: "/project-image/food.jpeg",
     description:
       "Web app using MERN with user authentication, real-time tracking, admin controls, and secure payments.",
     stack: ["React", "Node.js", "MongoDB", "Socket.io", "Stripe"],
@@ -69,7 +65,7 @@ const projects = [
   },
   {
     title: "Smart Supply Chain System",
-    image: supplyChainImage,
+    image: "/project-image/supplyChain.jpeg",
     description:
       "Dashboards for employees/managers, AI-based inventory & demand forecasting.",
     stack: ["React", "Flask", "Python", "Maps API", "PostgreSQL"],
@@ -78,7 +74,7 @@ const projects = [
   },
   {
     title: "Gmail Clone",
-    image: gmailImage,
+    image: "/project-image/gmail.jpeg",
     description:
       "Gmail-like app with Nodemailer, login/signup and responsive design.",
     stack: ["React", "Node.js", "Nodemailer", "MongoDB"],
@@ -87,7 +83,7 @@ const projects = [
   },
   {
     title: "AI-powered Chatbot",
-    image: chatbotImage,
+    image:"/project-image/chatbot.jpeg",
     description:
       "Flask + LangChain based chatbot for real-time, intelligent response using RAG + OpenAI.",
     stack: ["Flask", "LangChain", "OpenAI", "Python"],

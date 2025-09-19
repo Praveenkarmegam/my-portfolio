@@ -4,7 +4,6 @@ import {
   Card,
   CardContent,
   Typography,
-  Grid,
   useMediaQuery,
   useTheme,
 } from "@mui/material";
@@ -18,13 +17,15 @@ import {
   FaGitAlt,
   FaGithub,
   FaAws,
+  FaDatabase,
+  FaServer,
 } from "react-icons/fa";
 import {
   SiMongodb,
   SiMysql,
   SiPostgresql,
   SiExpress,
-  SiAngular,
+  SiMui,
   SiTensorflow,
   SiPytorch,
   SiNumpy,
@@ -33,12 +34,12 @@ import {
   SiTailwindcss,
   SiBootstrap,
   SiPostman,
-  SiVite,
   SiNetlify,
   SiScikitlearn,
   SiKeras,
+  SiVercel,
 } from "react-icons/si";
-import { MdInsertChart } from "react-icons/md";
+import { MdInsertChart, MdCloud } from "react-icons/md";
 
 const skillData = [
   {
@@ -56,9 +57,9 @@ const skillData = [
       { name: "React", icon: <FaReact size={24} /> },
       { name: "Node.js", icon: <FaNodeJs size={24} /> },
       { name: "Express.js", icon: <SiExpress size={24} /> },
-      { name: "Angular", icon: <SiAngular size={24} /> },
       { name: "Tailwind CSS", icon: <SiTailwindcss size={24} /> },
       { name: "Bootstrap", icon: <SiBootstrap size={24} /> },
+      { name: "Material UI", icon: <SiMui size={24} /> },
     ],
   },
   {
@@ -80,6 +81,7 @@ const skillData = [
       { name: "MongoDB", icon: <SiMongodb size={24} /> },
       { name: "MySQL", icon: <SiMysql size={24} /> },
       { name: "PostgreSQL", icon: <SiPostgresql size={24} /> },
+      { name: "Neo4j", icon: <FaDatabase size={24} /> },
     ],
   },
   {
@@ -88,7 +90,6 @@ const skillData = [
       { name: "Git", icon: <FaGitAlt size={24} /> },
       { name: "GitHub", icon: <FaGithub size={24} /> },
       { name: "Postman", icon: <SiPostman size={24} /> },
-      { name: "Vite", icon: <SiVite size={24} /> },
     ],
   },
   {
@@ -96,6 +97,8 @@ const skillData = [
     skills: [
       { name: "AWS", icon: <FaAws size={24} /> },
       { name: "Netlify", icon: <SiNetlify size={24} /> },
+      { name: "Render", icon: <SiVercel size={24} /> }, // modern cloud deploy icon
+      { name: "Hostinger", icon: <MdCloud size={24} /> },
     ],
   },
 ];
@@ -149,60 +152,58 @@ export default function Skills() {
               },
             }}
           >
-<CardContent>
-  <Typography
-    variant="h6"
-    fontWeight={600}
-    sx={{
-      color: "#C084FC",
-      mb: 2,
-      textShadow: "0 0 6px #A855F7",
-    }}
-  >
-    {item.category}
-  </Typography>
+            <CardContent>
+              <Typography
+                variant="h6"
+                fontWeight={600}
+                sx={{
+                  color: "#C084FC",
+                  mb: 2,
+                  textShadow: "0 0 6px #A855F7",
+                }}
+              >
+                {item.category}
+              </Typography>
 
-  <Box
-    sx={{
-      display: "flex",
-      flexWrap: "wrap",
-      rowGap: 2,
-      columnGap: "4%",
-      justifyContent: "flex-start",
-    }}
-  >
-    {item.skills.map((skill, idx) => (
-      <Box
-        key={idx}
-        sx={{
-          flex: {
-            xs: "0 0 48%",   // 2 per row on mobile
-            sm: "0 0 30%",   // 3 per row on small tablets
-            md: "0 0 22%",   // 4 per row on desktop
-          },
-          display: "flex",
-          alignItems: "center",
-          gap: 1,
-          p: 1,
-          borderRadius: "8px",
-          transition: "0.3s",
-          "&:hover": {
-            backgroundColor: "#2B1D44",
-            boxShadow: "0 0 10px #9B5CFF",
-            transform: "scale(1.05)",
-          },
-        }}
-      >
-        <Box sx={{ color: "#9B5CFF" }}>{skill.icon}</Box>
-        <Typography variant="body2" sx={{ color: "#d1d5db" }}>
-          {skill.name}
-        </Typography>
-      </Box>
-    ))}
-  </Box>
-</CardContent>
-
-
+              <Box
+                sx={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  rowGap: 2,
+                  columnGap: "4%",
+                  justifyContent: "flex-start",
+                }}
+              >
+                {item.skills.map((skill, idx) => (
+                  <Box
+                    key={idx}
+                    sx={{
+                      flex: {
+                        xs: "0 0 48%", // 2 per row on mobile
+                        sm: "0 0 30%", // 3 per row on small tablets
+                        md: "0 0 22%", // 4 per row on desktop
+                      },
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 1,
+                      p: 1,
+                      borderRadius: "8px",
+                      transition: "0.3s",
+                      "&:hover": {
+                        backgroundColor: "#2B1D44",
+                        boxShadow: "0 0 10px #9B5CFF",
+                        transform: "scale(1.05)",
+                      },
+                    }}
+                  >
+                    <Box sx={{ color: "#9B5CFF" }}>{skill.icon}</Box>
+                    <Typography variant="body2" sx={{ color: "#d1d5db" }}>
+                      {skill.name}
+                    </Typography>
+                  </Box>
+                ))}
+              </Box>
+            </CardContent>
           </Card>
         ))}
       </Box>

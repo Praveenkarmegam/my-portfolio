@@ -6,7 +6,7 @@ import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
 import Education from "./pages/Education";
-// import Testimonials from "./pages/Testimonials";
+import Testimonials from "./pages/Testimonials";
 import Achievements from "./pages/Achievements";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
@@ -35,7 +35,7 @@ function App() {
         <section id="experience"><Experience /></section>
         <section id="projects"><Projects /></section>
         <section id="education"><Education /></section>
-        {/* <section id="testimonials"><Testimonials /></section> */}
+        <section id="testimonials"><Testimonials /></section>
         <section id="achievements"><Achievements /></section>
         <section id="contact"><Contact /></section>
       </main>

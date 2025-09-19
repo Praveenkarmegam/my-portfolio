@@ -21,6 +21,7 @@ const sections = [
   "Projects",
   "Education",
   "Achievements",
+  "Testimonials",
   "Contact",
 ];
 
