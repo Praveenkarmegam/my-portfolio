@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
 
         <p className="footer-credit">
-         <strong> © Designed by Praveen K</strong>
+         <strong> © Designed & Developed by Praveen K</strong>
         </p>
       </div>
       </Box>
