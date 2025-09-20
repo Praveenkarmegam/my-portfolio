@@ -28,7 +28,7 @@ const testimonials = [
     role: "Client – Company Website",
     feedback:
       "Praveen K, a skilled Web Developer, built our official company website using HTML, CSS, JavaScript, and Bootstrap. He delivered a professional, responsive site that aligns perfectly with our brand identity, showcasing his attention to detail and strong technical expertise.",
-    image: "client/studixsolutions",
+    image: "client/studixsolutions.png",
     link: "https://www.studixsolutions.com",
   },
 ];
