@@ -60,8 +60,8 @@ const projects = [
     description:
       "Web app using MERN with user authentication, real-time tracking, admin controls, and secure payments.",
     stack: ["React", "Node.js", "MongoDB", "Socket.io", "Stripe"],
-    source: "https://github.com/your-username/food-delivery",
-    demo: "https://food-delivery-demo.netlify.app",
+    source: "https://github.com/Praveenkarmegam/online-food-delivery",
+    demo: "https://online-food-delivery1.netlify.app/",
   },
   {
     title: "Smart Supply Chain System",
@@ -69,8 +69,8 @@ const projects = [
     description:
       "Dashboards for employees/managers, AI-based inventory & demand forecasting.",
     stack: ["React", "Flask", "Python", "Maps API", "PostgreSQL"],
-    source: "https://github.com/your-username/supply-chain",
-    demo: "https://supply-chain-demo.netlify.app",
+    source: "",
+    demo: "",
   },
   {
     title: "Gmail Clone",
@@ -78,8 +78,8 @@ const projects = [
     description:
       "Gmail-like app with Nodemailer, login/signup and responsive design.",
     stack: ["React", "Node.js", "Nodemailer", "MongoDB"],
-    source: "https://github.com/your-username/gmail-clone",
-    demo: "https://gmail-clone-demo.netlify.app",
+    source: "https://github.com/Praveenkarmegam/gmail-clone1",
+    demo: "https://cozy-pavlova-5f2ea7.netlify.app/",
   },
   {
     title: "AI-powered Chatbot",
