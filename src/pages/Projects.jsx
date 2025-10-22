@@ -87,8 +87,8 @@ const projects = [
     description:
       "Flask + LangChain based chatbot for real-time, intelligent response using RAG + OpenAI.",
     stack: ["Flask", "LangChain", "OpenAI", "Python"],
-    source: "https://github.com/your-username/ai-chatbot",
-    demo: "https://ai-chatbot-demo.netlify.app",
+    source: "",
+    demo: "",
   },
 ];
 
