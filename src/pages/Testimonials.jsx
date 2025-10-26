@@ -21,7 +21,7 @@ const testimonials = [
     feedback:
       "Praveen K, as a skilled Full Stack Developer, has done an excellent job in developing my portfolio. He combined clean design with strong technical implementation, ensuring both functionality and professional presentation. His expertise and attention to detail truly stand out.",
     image: "/client/yuvan.jpg",
-    link: "https://yuvanu-portfolio.netlify.app/",
+    link: "https://yuvanu.netlify.app/",
   },
   {
     name: "Studix Solutions",
